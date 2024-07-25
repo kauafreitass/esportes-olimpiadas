@@ -1,31 +1,51 @@
+@import "/root.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap');
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--branco);
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .nav-menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--azul-escuro);
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .links {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
 .links a {
   text-decoration: none;
-  color: black;
+  color: var(--azul-medio);
+  transition: all 0.2s ease-in-out;
+  padding: 12px;
+}
+
+.links a:hover {
+  color: var(--azul-claro);
 }
 
 .dropbtn {
-  color: black;
-  padding: 8px;
-  font-size: 16px;
+  color: var(--azul-medio);
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
   border: none;
   cursor: pointer;
   border-radius: 8px;
   background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropbtn:hover {
+  color: var(--azul-claro);
 }
 
 .dropdown {
@@ -41,11 +61,12 @@ body {
 }
 
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  color: var(--branco);
+  padding: 8px 12px;
   text-decoration: none;
   display: block;
-  background-color: #c1c1c1;
+  background-color: var(--azul-claro);
+  width: max-content;
 }
 
 .dropdown-content {
@@ -58,6 +79,10 @@ body {
   }
 }
 
+.dropdown-content #col4 a:first-child {
+  border-radius: 0 12px 0 0;
+}
+
 .dropdown-content #col4 a:last-child {
   border-radius: 0 0 12px 0;
 }
@@ -66,9 +91,26 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  color: var(--branco);
+}
+
+.dropdown-col a{
+  color: var(--branco);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown-col a:hover {
+  color: var(--branco);
+  background-color: var(--azul-medio);
 }
 
 .dropdown:hover .dropdown-content {
   display: flex;
   gap: 4px;
 }
+
+.empty-div-nav {
+  width: 100px;
+}
+
+.main-content {}
