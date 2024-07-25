@@ -1,12 +1,19 @@
 :root {
-    --branco: #dfdfdc;
-    --amarelo: #eeaa34;
-    --verde: #63ae76;
-    --vermelho: #d03a49;
-    --marrom-claro: #74574e;
-    --marrom-escuro: #4b342b;
-    --preto: #22221d;
-    --azul-claro: #0983b1;
-    --azul-medio: #1d6a7d;
-    --azul-escuro: #174e63;
+  --branco: #dfdfdc;
+  --amarelo: #eeaa34;
+  --verde: #63ae76;
+  --vermelho: #d03a49;
+  --marrom-claro: #74574e;
+  --marrom-escuro: #4b342b;
+  --preto: #22221d;
+  --azul-claro: #0983b1;
+  --azul-medio: #1d6a7d;
+  --azul-escuro: #174e63;
+}
+
+* {
+  background-color: var(--branco);
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0;
+  margin: 0;
 }

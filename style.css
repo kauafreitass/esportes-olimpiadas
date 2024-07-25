@@ -1,17 +1,13 @@
 @import "/root.css";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap');
 
-body {
-  background-color: var(--branco);
-  font-family: "Josefin Sans", sans-serif;
-}
-
 .nav-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between  ;
   border-bottom: 1px solid var(--azul-escuro);
   font-weight: 500;
   font-size: 20px;
+  padding: 20px 8px;
 }
 
 .links {
@@ -25,7 +21,6 @@ body {
   text-decoration: none;
   color: var(--azul-medio);
   transition: all 0.2s ease-in-out;
-  padding: 12px;
 }
 
 .links a:hover {
@@ -69,23 +64,14 @@ body {
   width: max-content;
 }
 
-.dropdown-content {
-  #col1 a:first-child {
-    border-radius: 12px 0 0 0;
-  }
-
-  #col1 a:last-child {
-    border-radius: 0 0 0 12px;
-  }
+.dropdown-content a:first-child {
+  border-radius: 12px 12px 0 0;
 }
 
-.dropdown-content #col4 a:first-child {
-  border-radius: 0 12px 0 0;
+.dropdown-content a:last-child {
+  border-radius: 0 0 12px 12px;
 }
 
-.dropdown-content #col4 a:last-child {
-  border-radius: 0 0 12px 0;
-}
 
 .dropdown-col {
   display: flex;
@@ -97,6 +83,8 @@ body {
 .dropdown-col a{
   color: var(--branco);
   transition: all 0.3s ease-in-out;
+  width: 200px;
+  padding: 8px;
 }
 
 .dropdown-col a:hover {
