@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&display=swap');
+
 :root {
   --branco: #dfdfdc;
   --amarelo: #eeaa34;
@@ -6,6 +8,7 @@
   --marrom-claro: #74574e;
   --marrom-escuro: #4b342b;
   --preto: #22221d;
+  --preto-05alpha: rgba(34, 34, 29, 0.5);
   --azul-claro: #0983b1;
   --azul-medio: #1d6a7d;
   --azul-escuro: #174e63;
@@ -17,3 +20,4 @@
   padding: 0;
   margin: 0;
 }
+

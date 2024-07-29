@@ -1,0 +1,30 @@
+@import "./root.css";
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--azul-escuro);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 4px 44px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 96%;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--azul-medio);
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: var(--azul-claro);
+}
