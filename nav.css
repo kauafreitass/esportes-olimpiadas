@@ -3,11 +3,11 @@
 
 .nav-menu {
   display: flex;
-  justify-content: space-between  ;
+  justify-content: space-between;
   border-bottom: 1px solid var(--azul-escuro);
   font-weight: 500;
   font-size: 20px;
-  padding: 20px 8px;
+  padding: 4px 8px;
 }
 
 .links {
@@ -80,7 +80,7 @@
   color: var(--branco);
 }
 
-.dropdown-col a{
+.dropdown-col a {
   color: var(--branco);
   transition: all 0.3s ease-in-out;
   width: 200px;
@@ -100,5 +100,3 @@
 .empty-div-nav {
   width: 100px;
 }
-
-.main-content {}

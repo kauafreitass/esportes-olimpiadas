@@ -1,0 +1,53 @@
+@import "/root.css";
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    border-left: 1px solid var(--azul-medio);
+    padding: 50px;
+}
+
+.sidebar-title {
+    color: var(--azul-medio);
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-btn {
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+    width: 120px;
+}
+
+.link-btn:hover {
+    background-color: var(--azul-escuro);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px;
+    gap: 50px;
+}
