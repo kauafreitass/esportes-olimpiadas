@@ -1,0 +1,7 @@
+.img {
+    display: flex;
+    margin: 0;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--preto-05alpha);
+}
