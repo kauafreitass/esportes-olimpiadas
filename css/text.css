@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4% 0 0 16%;
+    margin: 4% 0 0 auto;
     gap: 48px;
 }
 
@@ -26,14 +26,8 @@
     flex-direction: column;
     align-items: center;
     gap: 36px;
-    border-right: 1px solid var(--azul-medio);
-    border-bottom: 1px solid var(--azul-medio);
     padding: 48px;
-    position: fixed;
-    top: 15%;
-    left: 0;
     height: 100%;
-    background-color: var(--branco);
 
 }
 
