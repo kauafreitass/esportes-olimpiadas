@@ -1,6 +1,7 @@
 @import "./root.css";
 
 .nav-menu {
+  background-color: var(--branco);
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--azul-escuro);
@@ -10,7 +11,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 96%;
+  width: 100%;
 }
 
 .links {

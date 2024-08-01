@@ -3,6 +3,7 @@
 
 .main-content {
     display: flex;
+    background-color: var(--branco);
     margin-top: 120px;
     margin-bottom: 120px;
 }
@@ -29,9 +30,11 @@
     border-bottom: 1px solid var(--azul-medio);
     padding: 48px;
     position: fixed;
-    top: 20%;
+    top: 15%;
     left: 0;
     height: 100%;
+    background-color: var(--branco);
+
 }
 
 .sidebar-title {
