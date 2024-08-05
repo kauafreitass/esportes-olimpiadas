@@ -1,0 +1,171 @@
+.separador {
+    background-color: var(--azul-claro);
+    width: 86%;
+    text-align: center;
+    color: var(--branco);
+    padding: 6px;
+
+}
+
+.flex {
+    display: flex;
+    width: 86%;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.imagem-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 900px;
+    
+}
+
+.content-reverse {
+    width: 100%;
+    text-align: end;
+
+}
+
+.imagem-flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+    width: 86%;
+    align-items: start;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.containertenis {
+    width: 86%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    display: flex;
+}
+.container-card{
+   width: 86%;
+   align-items: center;
+   justify-content: center;
+   box-sizing: border-box;
+   font-family: Poppins;
+   display: flex;
+
+}
+/*INICIO DO CARD*/
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.card {
+    background-color: #ffffff;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.card-atletas {
+    background-color: #ffffff;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.imgum {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+}
+
+.cardcontent {
+    padding: 20px;
+}
+
+.cardcontent h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.cardcontent p {
+    font-size: 12px;
+    margin-bottom: 10px;
+
+}
+
+.imgdois {
+    width: 350px;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.content-subtitle{
+    color: var(--azul-claro);
+}
+
+.content-topic{
+    color: var(--azul-claro);
+    font-weight: 650;
+}
+
+.separador2 {
+    width: 100%;
+    height: auto;
+}
+
+
+button {
+    background: var(--azul-claro);
+    color: white;
+    font-size: 12px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+
+}
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #ffffff;
+    color:var(--azul-claro);
+    font-size: 12px;
+    font-weight: 500;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+
+button a:hover {
+    color: #51b39c;
+    text-decoration: none;
+}
