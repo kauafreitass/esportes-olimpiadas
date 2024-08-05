@@ -21,6 +21,11 @@
     width: 80%;
 }
 
+.content-subtitle {
+    text-align: left;
+    font-size: 1.215rem;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
