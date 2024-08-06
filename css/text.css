@@ -21,9 +21,18 @@
     width: 80%;
 }
 
+.content-title {
+    font-size: 1.215rem;
+}
+
 .content-subtitle {
+    display: flex;
+    justify-content: left;
+    width: 80%;
     text-align: left;
     font-size: 1.215rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .sidebar {
@@ -75,4 +84,8 @@
 
 .active {
     background-color: var(--azul-medio);
+}
+
+.athlete-country {
+    font-weight: bold;
 }

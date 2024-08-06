@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-between;
     height: 900px;
-    
+
 }
 
 .content-reverse {
@@ -55,22 +55,24 @@
     font-family: Poppins;
     display: flex;
 }
-.container-card{
-   width: 86%;
-   align-items: center;
-   justify-content: center;
-   box-sizing: border-box;
-   font-family: Poppins;
-   display: flex;
+
+.container-card {
+    width: 86%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Poppins;
+    display: flex;
 
 }
+
 /*INICIO DO CARD*/
 .cardcontainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    
+
 }
 
 .card {
@@ -80,6 +82,14 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
     overflow: hidden;
     margin-bottom: 80px;
+
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.card:hover,
+.card-atletas:hover {
+    transform: scale(1.05);
 }
 
 .card-atletas {
@@ -89,6 +99,9 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.185);
     overflow: hidden;
     margin-bottom: 80px;
+
+    transition: 0.3s ease;
+    cursor: default;
 }
 
 .imgum {
@@ -120,11 +133,11 @@
     object-fit: cover;
 }
 
-.content-subtitle{
+.content-subtitle {
     color: var(--azul-claro);
 }
 
-.content-topic{
+.content-topic {
     color: var(--azul-claro);
     font-weight: 650;
 }
@@ -135,7 +148,7 @@
 }
 
 
-button {
+.btn {
     background: var(--azul-claro);
     color: white;
     font-size: 12px;
@@ -145,16 +158,18 @@ button {
     border: none;
     font-weight: 500;
 
+    transition: 0.3s ease;
+
 }
 
-button a {
+.btn a {
     color: #ffffff;
     text-decoration: none;
 }
 
-button:hover {
+.btn:hover {
     background: #ffffff;
-    color:var(--azul-claro);
+    color: var(--azul-claro);
     font-size: 12px;
     font-weight: 500;
     height: 30px;
@@ -165,7 +180,11 @@ button:hover {
 }
 
 
-button a:hover {
+.btn a:hover {
     color: #51b39c;
     text-decoration: none;
+}
+
+.content-title {
+    margin-bottom: 8px;
 }
