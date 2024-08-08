@@ -16,7 +16,7 @@
     <nav class="nav-menu">
         <div class="logo">
             <a href="index.html">
-                <img src="assets/logo.png" alt="logo" width="135px">
+                <img src="../assets/logo.png" alt="logo" width="135px">
             </a>
         </div>
         <div class="links">
