@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/text.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="texto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
 </head>
@@ -32,49 +33,49 @@
                 <h3>Esportes</h3>
             </div>
             <div class="sidebar-links">
-                <a href="pages/bueno/atletismo.html">
+                <a href="../pages/bueno/atletismo.html">
                     <button class="link-btn" id="atletismo">
                         Atletismo
                     </button>
                 </a>
 
-                <a href="pages/octavio/natacao.html">
+                <a href="../pages/octavio/natacao.html">
                     <button class="link-btn" id="natacao">
                         Natação
                     </button>
                 </a>
 
-                <a href="pages/luis/tiro.html">
+                <a href="../pages/luis/tiro.html">
                     <button class="link-btn" id="tiro">
                         Tiro
                     </button>
                 </a>
 
-                <a href="pages/paulo/voleibol.html">
+                <a href="../pages/paulo/voleibol.html">
                     <button class="link-btn" id="voleibol">
                         Voleibol
                     </button>
                 </a>
 
-                <a href="pages/ana/tenis.html">
+                <a href="../pages/ana/tenis.html">
                     <button class="link-btn" id="tenis">
                         Tênis
                     </button>
                 </a>
 
-                <a href="pages/kaua/vela.html">
+                <a href="../pages/kaua/vela.html">
                     <button class="link-btn" id="vela">
                         Vela
                     </button>
                 </a>
 
-                <a href="pages/roberto/peso.html">
+                <a href="../pages/roberto/peso.html">
                     <button class="link-btn" id="peso">
                         Levantamento de peso
                     </button>
                 </a>
 
-                <a href="pages/duda/luta.html">
+                <a href="../pages/duda/luta.html">
                     <button class="link-btn" id="luta">
                         Luta greco-romana
                     </button>
@@ -84,35 +85,36 @@
         <!-- Fim da barra lateral -->
         <!-- Início do conteúdo do site -->
         <section class="content">
-            <?php
-            $file = 'feedbacks.json';
-            if (file_exists($file)) {
-                $current_data = file_get_contents($file);
-                $feedbacks = json_decode($current_data, true);
-                if (!empty($feedbacks)) {
-                    foreach ($feedbacks as $feedback) {
-                        echo '<div class="content-text">';
-                        echo '<h3> Comentário: ' . htmlspecialchars($feedback["relato"]) . '</h3>';
-                        echo '<br>';
-                        echo '</div>';
+            <div class="comentarios">
+                <?php
+                $file = 'feedbacks.json';
+                if (file_exists($file)) {
+                    $current_data = file_get_contents($file);
+                    $feedbacks = json_decode($current_data, true);
+                    if (!empty($feedbacks)) {
+                        foreach ($feedbacks as $feedback) {
+                            echo '<div class="card">';
+                            echo '<h3>' . htmlspecialchars($feedback["relato"]) . '</h3>';
+                            echo '</div>';
+                        }
+                    } else {
+                ?>
+                        <script>
+                            window.location.replace("../index.html");
+                            alert("Erro, nenhum feedback recebido!");
+                        </script>
+                    <?php
                     }
                 } else {
-            ?>
+                    ?>
                     <script>
                         window.location.replace("../index.html");
                         alert("Erro, nenhum feedback recebido!");
                     </script>
                 <?php
                 }
-            } else {
                 ?>
-                <script>
-                    window.location.replace("../index.html");
-                    alert("Erro, nenhum feedback recebido!");
-                </script>
-            <?php
-            }
-            ?>
+            </div>
         </section>
     </main>
     <!-- Fim do conteúdo do site -->
